@@ -16,6 +16,24 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - whats up
+    - whatem
+    - what up
+    - howdi
+    - bonjour
+    - hiya
+    
+- intent: greet_rsponse
+  examples: |
+    - im ok
+    - im ok thanks
+    - im great thanks
+    - im good
+    - im great
+    - fine thanks
+    - fine
+    - im fine
+    - im good
 
 - intent: goodbye
   examples: |
@@ -39,50 +57,48 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sure
+    - ok
+    - why not
+    - ok great
+    - yes i did
+    - yeah, great
+    - yh
+    - yep
+    - pretty good
+    - fine
+    - you bet
+    - i sure did
+    - more or less
+    - for sure
+    - most definately
+    - 100%
+    - yeeeeeees
+    - okay
+    - yeeep
+    - 4 sure
+    - right on
 
 - intent: deny
   examples: |
     - no
     - n
+    - none
+    - no thanks
+    - didnt do any
+    - no i didnt
+    - could have been better
+    - not great
+    - nope
+    - nah
     - never
+    - nada
+    - no chance
+    - noooooooooooo
     - I don't think so
     - don't like that
     - no way
     - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
@@ -90,3 +106,40 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+      
+- intent: thankyou
+  examples: |
+    - okay great thanks
+    - thank you
+    - thanks
+    - sure thanks
+    - thank you very much
+    - thanks bye
+    - thanks i appreciate that
+    - much appreciated
+    - thank you so much
+    - appreciated
+    - i cant thank you enough
+    
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - yes can you send me the newsletter
+    - Yes, can you sign me up for the newsletter
+    - I want to subscribe to the newsletter
+    - yes i would like to subscribe
+    
+- intent: inform_email
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+    
+- intent: inform_frequency
+  examples: |
+    - every week
+    - once a week
+    - twice per month
+    - as often as possible
+    - once a  month

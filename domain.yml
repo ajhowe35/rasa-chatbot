@@ -8,19 +8,46 @@ intents:
 - deny
 - goodbye
 - greet
-- mood_great
-- mood_unhappy
+- thankyou
+- greet_rsponse
+- inform_email
+- inform_frequency
+- subscribe
+
 responses:
   utter_greet:
   - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  - text: Hi, how are you today?
   utter_goodbye:
   - text: Bye
+  - text: Goodbye now, take care
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  - text: I am a chat-bot created by Andrew J Howe.
+  utter_greet_rsponse:
+  - text: "Great, lets get started, but first would you like to subscribe to our newsletter? "
+  utter_ask_email:
+  - text: What is your email address?
+  utter_ask_frequency:
+  - text: How often do you want to recieve the newsletter, once a week, once as month etc?
+  utter_subscribed:
+  - text: You're all set! Check your inbox at {email} to confirm you will recieve emails {frequency}
+  
+forms:
+  newsletter_form:
+    email:
+      - type: from_text
+    frequency:
+      - type: from_text
+      
+slots:
+  email:
+    type: text
+    influence_conversation: false
+  frequency:
+    type: text
+    influence_conversation: false
+  
+ 
+           
+      
